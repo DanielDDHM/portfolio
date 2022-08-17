@@ -1,6 +1,6 @@
 import './styles.css';
 import { Header } from '../components';
-import { About, Experience, Education, Skills } from '../pages';
+import { About, Experience, Education, Skills, Contact } from '../pages';
 // import { blocker } from '../scripts/blocker';
 
 export function App() {
@@ -15,6 +15,8 @@ export function App() {
         <Education />
         <hr className="m-0" />
         <Skills />
+        <hr className="m-0" />
+        <Contact />
       </div>
 
       {/* {blocker()} */}

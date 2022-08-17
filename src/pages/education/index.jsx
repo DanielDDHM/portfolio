@@ -1,4 +1,6 @@
 import { Courses, Grad } from '../../constants';
+import './styles.css'
+
 export function Education() {
   return (
     <section className="resume-section">

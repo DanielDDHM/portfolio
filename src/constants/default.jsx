@@ -55,6 +55,51 @@ export const Skill = [
   },
   {
     id: 5,
+    name: 'Typescript',
+    icon: 'skill-ts',
+  },
+  {
+    id: 6,
+    name: 'Golang',
+    icon: 'skill-go',
+  },
+  {
+    id: 7,
+    name: 'ReactJs',
+    icon: 'skill-react',
+  },
+  {
+    id: 8,
+    name: 'Git',
+    icon: 'skills-git',
+  },
+  {
+    id: 9,
+    name: 'PostgreSQL',
+    icon: 'skills-PostgreSql',
+  },
+  {
+    id: 10,
+    name: 'MongoDb',
+    icon: 'skills-mongodb',
+  },
+  {
+    id: 11,
+    name: 'Mysql',
+    icon: 'skills-mysql',
+  },
+  {
+    id: 13,
+    name: 'Docker',
+    icon: 'skills-docker',
+  },
+  {
+    id: 14,
+    name: 'Amazon Web Services',
+    icon: 'Aws',
+  },
+  {
+    id: 5,
     name: '',
     icon: '',
   },
