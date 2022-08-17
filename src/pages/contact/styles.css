@@ -1,8 +1,0 @@
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  border: 1px solid white;
-  padding: 20px;
-  gap: 10px;
-}

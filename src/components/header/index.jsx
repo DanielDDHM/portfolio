@@ -1,20 +1,20 @@
-import './styles.css';
+import { headerStyle } from './styles';
 import { Navi } from '../../constants';
 
 export function Header() {
   return (
-    <div className="header">
-      <div className="header-div">
-        <p className="header-logo">Daniel Machado</p>
+    <div style={headerStyle.header}>
+      <div style={headerStyle.header_div}>
+        <p style={headerStyle.header_logo}>Daniel Machado</p>
       </div>
-      <div className="header-div">
-        <ul className="nav-link">
-          <li className="nav-link-li" onClick={() => console.log('ok')}>
+      <div style={headerStyle.header_div}>
+        <ul style={headerStyle.nav_link}>
+          <li style={headerStyle.nav_link_li} onClick={() => console.log('ok')}>
             {Navi.Home}
           </li>
-          <li className="nav-link-li">{Navi.Experience}</li>
-          <li className="nav-link-li">{Navi.Skills}</li>
-          <li className="nav-link-li">{Navi.Contact}</li>
+          <li style={headerStyle.nav_link_li}>{Navi.Experience}</li>
+          <li style={headerStyle.nav_link_li}>{Navi.Skills}</li>
+          <li style={headerStyle.nav_link_li}>{Navi.Contact}</li>
         </ul>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import { Skill } from '../../constants';
-import './styles.css';
+import { skillsStyles } from './styles';
 
 export function Skills() {
   return (
@@ -7,7 +7,7 @@ export function Skills() {
       <div className="resume-section-content">
         <h2 className="mb-5">Skills</h2>
         <div className="subheading mb-3">Stacks</div>
-        <ul className="list-inline dev-icons">
+        <ul style={skillsStyles.dev_icons}>
           {Skill.map((item) => (
             <li className="list-inline-item" key={item.id}>
               <i className={item.icon}>{item.name}</i>

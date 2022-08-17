@@ -1,5 +1,5 @@
 import { Courses, Grad } from '../../constants';
-import './styles.css'
+import { educationStyles } from './styles';
 
 export function Education() {
   return (
