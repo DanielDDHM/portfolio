@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  width: 100%;
+  background-color: lightblue;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-link li {
+  margin-left: 15px;
+  font-size: 30px;
+}
