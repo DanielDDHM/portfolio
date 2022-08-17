@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border: 1px solid white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header-logo,
+.nav-link li {
+  font-size: 30px;
+}
+
+.header-logo {
+  gap: 25px;
+}
+
+.header-div {
+  color: lightblue;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 25px;
+}
+
+.nav-link li {
+  border: 2px solid #395b64;
+  border-radius: 15%;
+  padding: 5px;
+}
