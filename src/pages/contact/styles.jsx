@@ -1,11 +1,13 @@
 import { StyleSheet } from 'react-native';
 
-export const contactStyle = StyleSheet.create({
-  contact_form: {
-    display: 'flex',
-    width: 'fit-content',
-    border: '1px solid white',
-    padding: '20px',
-    gap: '10px',
-  },
-});
+const default_contact = {};
+
+export const contact_style_mobile = StyleSheet.create({});
+
+export const contact_style_tablet = StyleSheet.create({});
+
+export const contact_style_laptop = StyleSheet.create({});
+
+export const contact_style_desktop = StyleSheet.create({});
+
+export const contact_style_large = StyleSheet.create({});

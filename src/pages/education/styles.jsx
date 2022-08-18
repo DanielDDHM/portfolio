@@ -1,12 +1,13 @@
 import { StyleSheet } from 'react-native';
 
-export const educationStyles = StyleSheet.create({
-  fa_ul: {
-    listStyle: 'none',
-  },
-  fa_li: {
-    gap: '10px',
-    display: 'flex',
-    justifyContent: 'space-between',
-  },
-});
+const default_education = {};
+
+export const education_style_mobile = StyleSheet.create({});
+
+export const education_style_tablet = StyleSheet.create({});
+
+export const education_style_laptop = StyleSheet.create({});
+
+export const education_style_desktop = StyleSheet.create({});
+
+export const education_style_large = StyleSheet.create({});

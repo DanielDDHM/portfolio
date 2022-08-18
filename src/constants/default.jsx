@@ -10,25 +10,25 @@ export const AboutIcons = [
     id: 1,
     name: 'LinkedIn',
     link: 'https://www.linkedin.com/in/ddhm/',
-    class: 'fab fa-linked-in',
+    icon: 'fab fa-linked-in',
   },
   {
     id: 2,
     name: 'Github',
     link: 'https://github.com/DanielDDHM',
-    class: 'fab fa-github',
+    icon: 'fab fa-github',
   },
   {
     id: 3,
     name: 'Email',
     link: 'mailto:daniel.ddhm@gmail.com',
-    class: 'fas fa-envolope-square',
+    icon: 'fas fa-envolope-square',
   },
   {
     id: 4,
     name: 'WhatsApp',
     link: 'https://wa.me/5571996421369',
-    class: 'fab fa-whatsapp',
+    icon: 'fab fa-whatsapp',
   },
 ];
 

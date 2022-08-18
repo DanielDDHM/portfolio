@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { FlatList, Text, ScrollView } from 'react-native';
+import { FlatList, Text, ScrollView, View } from 'react-native';
 import { Courses, Grad } from '../../constants';
 // import { educationStyles } from './styles';
 
@@ -13,7 +13,7 @@ export function Education() {
   }, []);
 
   return (
-    <section className="resume-section">
+    <View>
       <ScrollView className="resume-section-content">
         <Text>Education</Text>
         {grad.map((item) => (
@@ -36,6 +36,6 @@ export function Education() {
           renderItem={({ item }) => <Text>{item.title}</Text>}
         />
       </ScrollView>
-    </section>
+    </View>
   );
 }

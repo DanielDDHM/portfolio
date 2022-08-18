@@ -35,7 +35,7 @@ export const media = () => {
     ? 'Desktop'
     : Large_devices
     ? 'Large'
-    : null;
+    : 'Large';
 
   return device;
 };

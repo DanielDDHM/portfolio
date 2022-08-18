@@ -1,9 +1,25 @@
 import { StyleSheet } from 'react-native';
 
+const default_dark = {
+  container: {
+    backgroundColor: 'white',
+    height: '100%',
+    width: '100%',
+  },
+  body: {
+    backgroundColor: 'white',
+  },
+  mb0: {
+    padding: '10px',
+    borderWidth: '1px',
+    borderBottomColor: 'black',
+  },
+};
+
 export const appStyles = StyleSheet.create({
-  Mobile: [{ backgroundColor: '#2c3333', height: '100%', width: '100%' }],
-  Tablet: [{ backgroundColor: 'blue', height: '100%', width: '100%' }],
-  Laptop: [{ backgroundColor: 'yellow', height: '100%', width: '100%' }],
-  Desktop: [{ backgroundColor: 'green', height: '100%', width: '100%' }],
-  Large: [{ backgroundColor: 'gray', height: '100%', width: '100%' }],
+  Mobile: { ...default_dark },
+  Tablet: { ...default_dark },
+  Laptop: { ...default_dark },
+  Desktop: { ...default_dark },
+  Large: { ...default_dark },
 });
