@@ -1,33 +1,70 @@
 import { StyleSheet } from 'react-native';
 
-export const headerStyle = StyleSheet.create({
+export const header_style_mobile = StyleSheet.create({
   header: {
     display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    borderColor: 'pink',
+    borderWidth: '1px',
     width: '100%',
-    justifyContent: 'space-between',
-    border: '1px solid white',
-    fontFamily: 'Times New Roman, Times, serif',
   },
-  nav_link_li: {
-    fontSize: '30px',
-    border: '2px solid #395b64',
-    borderRadius: '15%',
-    padding: '5px',
+  list_li: {
+    flexDirection: 'row',
   },
+});
 
-  header_logo: {
-    gap: '25px',
-    fontSize: '30px',
-  },
-
-  header_div: {
-    color: 'lightblue',
-  },
-
-  nav_link: {
+export const header_style_tablet = StyleSheet.create({
+  header: {
     display: 'flex',
+    flexDirection: 'row',
+    borderColor: 'white',
+    borderWidth: '1px',
+    width: '100%',
+  },
+  list_li: {
+    flexDirection: 'row',
+  },
+});
+
+export const header_style_laptop = StyleSheet.create({
+  header: {
+    display: 'flex',
+    flexDirection: 'row',
+    borderColor: 'gray',
+    borderWidth: '1px',
+    width: '100%',
+  },
+  list_li: {
+    flexDirection: 'row',
+  },
+});
+
+export const header_style_desktop = StyleSheet.create({
+  header: {
+    display: 'flex',
+    flexDirection: 'row',
     justifyContent: 'space-between',
-    listStyleType: 'none',
-    gap: '25px',
+    borderColor: 'blue',
+    borderWidth: '1px',
+    width: '100%',
+  },
+  list_li: {
+    flexDirection: 'row',
+  },
+});
+
+export const header_style_large = StyleSheet.create({
+  header: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    borderColor: 'red',
+    borderWidth: '1px',
+    width: '100%',
+  },
+  list_li: {
+    flexDirection: 'row',
+    gap: '10px'
   },
 });

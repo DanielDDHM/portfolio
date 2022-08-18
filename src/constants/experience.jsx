@@ -4,8 +4,12 @@ export const Exp = [
     title: 'Backend Developer',
     employer: 'Capitual',
     acts: [
-      { id: 1, act: '1' },
-      { id: 2, act: '2' },
+      { id: 1, act: 'Backend Development' },
+      { id: 2, act: 'Tests Development' },
+      { id: 3, act: 'Application Monitoring' },
+      { id: 4, act: 'Features Development' },
+      { id: 5, act: 'Map Technologies and Document' },
+      { id: 6, act: ' Tech Crisis Containment' },
     ],
   },
   // {

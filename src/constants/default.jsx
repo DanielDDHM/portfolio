@@ -1,8 +1,8 @@
 export const Navi = [
-  { class: 'Home' },
-  { class: 'Skills' },
-  { class: 'Experience' },
-  { class: 'Contact' },
+  { id: 1, class: 'Home' },
+  { id: 2, class: 'Skills' },
+  { id: 3, class: 'Experience' },
+  { id: 4, class: 'Contact' },
 ];
 
 export const AboutIcons = [

@@ -1,4 +1,6 @@
-import { View, ScrollView, Text } from 'react-native';
+import { View, ScrollView, Text, FlatList } from 'react-native';
+import { Skill } from '../../constants';
+import { skillsStyles } from './styles';
 // import { Skill } from '../../constants';
 // import { skillsStyles } from './styles';
 
@@ -9,6 +11,10 @@ export function Skills() {
         <ScrollView className="resume-section-content">
           <Text>Skills</Text>
           <Text>Stacks</Text>
+          <FlatList
+            data={Skill}
+            renderItem={({ item }) => <Text>{item.name}</Text>}
+          />
         </ScrollView>
       </section>
     </View>

@@ -1,27 +1,29 @@
-import { headerStyle } from './styles';
 import { Navi } from '../../constants';
-import { FlatList, ScrollView, Text } from 'react-native';
+import { Text, View } from 'react-native';
 import { useEffect, useState } from 'react';
+import { styleHandler } from './handler';
 
 export function Header() {
-  const { header, header_div, header_logo } = headerStyle;
-
   const [head, setHead] = useState([]);
+  const [style, setStyle] = useState({});
+
+  const sty = styleHandler();
 
   useEffect(() => {
+    setStyle(sty);
     setHead(Navi);
-  });
+  }, [sty]);
+
   return (
-    <ScrollView style={{ header }}>
-      <ScrollView style={{ header_div }}>
-        <Text style={{ header_logo }}>Daniel Machado</Text>
-      </ScrollView>
-      <ScrollView style={{ header_div }}>
-        <FlatList
-          data={head}
-          renderItem={({ item }) => <Text>{item.class}</Text>}
-        />
-      </ScrollView>
-    </ScrollView>
+    <View style={style.header}>
+      <View>
+        <Text>DDHM</Text>
+      </View>
+      <View style={style.list_li} >
+        {head.map((item) => (
+          <Text key={item.id}>{item.class}</Text>
+        ))}
+      </View>
+    </View>
   );
 }

@@ -12,21 +12,19 @@ export function Experience() {
 
   return (
     <View>
-      <section className="resume-section">
-        <ScrollView className="resume-section-content">
-          <Text>Experience</Text>
-          {exp.map((item) => (
-            <ScrollView key={item.id}>
-              <Text>{item.title}</Text>
-              <Text>{item.employer}</Text>
-              <FlatList
-                data={item.acts}
-                renderItem={({ item }) => <Text>{item.act}</Text>}
-              />
-            </ScrollView>
-          ))}
-        </ScrollView>
-      </section>
+      <ScrollView>
+        <Text>Experience</Text>
+        {exp.map((item) => (
+          <ScrollView key={item.id}>
+            <Text>{item.title}</Text>
+            <Text>{item.employer}</Text>
+            <FlatList
+              data={item.acts}
+              renderItem={({ item }) => <Text>{item.act}</Text>}
+            />
+          </ScrollView>
+        ))}
+      </ScrollView>
     </View>
   );
 }
