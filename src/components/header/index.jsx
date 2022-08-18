@@ -4,13 +4,13 @@ import { FlatList, ScrollView, Text } from 'react-native';
 import { useEffect, useState } from 'react';
 
 export function Header() {
-    const {header, header_div, header_logo} = headerStyle;
+  const { header, header_div, header_logo } = headerStyle;
 
-    const [head, setHead] = useState([])
+  const [head, setHead] = useState([]);
 
-    useEffect(() => {
-        setHead(Navi)
-    })
+  useEffect(() => {
+    setHead(Navi);
+  });
   return (
     <ScrollView style={{ header }}>
       <ScrollView style={{ header_div }}>
@@ -18,8 +18,8 @@ export function Header() {
       </ScrollView>
       <ScrollView style={{ header_div }}>
         <FlatList
-         data={head}
-         renderItem={({item}) => <Text>{item.class}</Text>}
+          data={head}
+          renderItem={({ item }) => <Text>{item.class}</Text>}
         />
       </ScrollView>
     </ScrollView>

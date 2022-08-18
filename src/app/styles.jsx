@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 export const appStyles = StyleSheet.create({
-  app: [
+  Mobile: [
     {
       backgroundColor: '#2c3333',
       color: 'white',
@@ -9,4 +9,8 @@ export const appStyles = StyleSheet.create({
       margin: '0',
     },
   ],
+  Tablet: [{ backgroundColor: 'blue', height:'100%' }],
+  Laptop: [{ backgroundColor: 'yellow', height:'100%' }],
+  Desktop: [{ backgroundColor: 'green', height:'100%' }],
+  Large: [{ backgroundColor: 'gray', height:'100%' }],
 });
