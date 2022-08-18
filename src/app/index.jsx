@@ -16,7 +16,7 @@ export function Main() {
   return (
     <ScrollView style={style.container}>
       <Header />
-      <View>
+      <View style={style.body}>
         <View style={style.mb0}>
           <About />
         </View>

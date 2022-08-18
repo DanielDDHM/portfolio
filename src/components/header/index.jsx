@@ -3,6 +3,7 @@ import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { useEffect, useState } from 'react';
 import { styleHandler } from './handler';
 import logo from '../../assets/images/logo.png';
+import { useMediaQuery } from 'react-responsive';
 
 export function Header() {
   const [head, setHead] = useState([]);
@@ -18,24 +19,28 @@ export function Header() {
   return (
     <View style={style.header}>
       <View>
-        <TouchableOpacity onPress={() => alert('Ola marilene')}>
+        <TouchableOpacity>
           <Image
             source={logo}
             style={{ width: '100px', height: '100px' }}
-          ></Image>
+          />
         </TouchableOpacity>
       </View>
-      <View style={style.list_li}>
-        {head.map((item) => (
-          <TouchableOpacity
-            style={style.btn_li}
-            onPress={() => console.log(`${item.class}`)}
-            key={item.id}
-          >
-            <Text style={style.txt_li}>{item.class}</Text>
-          </TouchableOpacity>
-        ))}
-      </View>
+      {useMediaQuery({ maxWidth: 765 }) ? (
+        <Text>A</Text>
+      ) : (
+        <View style={style.list_li}>
+          {head.map((item) => (
+            <TouchableOpacity
+              style={style.btn_li}
+              onPress={() => alert(`${item.class}`)}
+              key={item.id}
+            >
+              <Text style={style.txt_li}>{item.class}</Text>
+            </TouchableOpacity>
+          ))}
+        </View>
+      )}
     </View>
   );
 }

@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const default_dark = {
   container: {
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     height: '100%',
     width: '100%',
   },

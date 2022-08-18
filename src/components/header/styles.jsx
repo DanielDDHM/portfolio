@@ -12,17 +12,22 @@ const default_header = {
   },
   list_li: {
     flexDirection: 'row',
-    gap: '10px',
+    gap: '50px',
     padding: '25px',
   },
   btn_li: {
-    fontSize: 30,
+    fontSize: 40,
     borderWidth: '1px',
     borderColor: '#6b5b95',
-    padding: '10px',
+    padding: '20px',
     borderRadius: '3px',
     textAlign: 'center',
-    maxHeight: 42,
+    maxHeight: 55,
+
+    shadowOffset: {width: 2, height: 5},  
+    shadowColor: '#6b5b95',  
+    shadowOpacity: 0.4,  
+    shadowRadius: 4,  
   },
   txt_li: {
     color: 'white',
@@ -41,7 +46,7 @@ export const header_style_mobile = StyleSheet.create({
 
 export const header_style_tablet = StyleSheet.create({
   header: {
-    ...default_header.header,
+    ...default_header.header
   },
   list_li: {
     display: 'none',

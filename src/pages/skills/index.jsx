@@ -1,22 +1,31 @@
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { useEffect, useState } from 'react';
 import { View, ScrollView, Text, FlatList } from 'react-native';
 import { Skill } from '../../constants';
 import { skillsStyles } from './styles';
-// import { Skill } from '../../constants';
-// import { skillsStyles } from './styles';
 
 export function Skills() {
+  const [skill, setSkill] = useState([]);
+
+  useEffect(() => {
+    setSkill(Skill);
+  }, [Skill]);
+
   return (
     <View>
-      <section className="resume-section">
-        <ScrollView className="resume-section-content">
+      <ScrollView className="resume-section-content">
+        <View>
           <Text>Skills</Text>
+        </View>
+        <View>
           <Text>Stacks</Text>
-          <FlatList
-            data={Skill}
-            renderItem={({ item }) => <Text>{item.name}</Text>}
-          />
-        </ScrollView>
-      </section>
+        </View>
+        <View>
+          {skill.map((item) => (
+            <FontAwesomeIcon icon={item.icon} />
+          ))}
+        </View>
+      </ScrollView>
     </View>
   );
 }
