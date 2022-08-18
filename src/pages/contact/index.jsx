@@ -1,10 +1,11 @@
 import { contactStyle } from './styles';
+import { ScrollView } from 'react-native';
 
 export function Contact() {
   return (
     <section className="resume-section">
-      <div className="resume-section-content">
-        <h2 className="mb-5">Contact</h2>
+      <ScrollView className="resume-section-content">
+        <h2>Contact</h2>
         <form style={contactStyle.contact_form} action="Submit">
           <label htmlFor="">Name</label>
           <input type="text" />
@@ -14,7 +15,7 @@ export function Contact() {
           <input type="text" />
           <button>Submit</button>
         </form>
-      </div>
+      </ScrollView>
     </section>
   );
 }

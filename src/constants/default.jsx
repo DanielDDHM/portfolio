@@ -1,9 +1,9 @@
-export const Navi = {
-  Home: 'Home',
-  Skills: 'Skills',
-  Experience: 'Experience',
-  Contact: 'Contact',
-};
+export const Navi = [
+        {class: 'Home'},
+        {class: 'Skills'},
+        {class: 'Experience'},
+        {class: 'Contact'},
+];
 
 export const AboutIcons = [
   {
@@ -96,7 +96,7 @@ export const Skill = [
   {
     id: 14,
     name: 'Amazon Web Services',
-    icon: 'Aws',
+    icon: 'skills-Aws',
   },
   {
     id: 15,

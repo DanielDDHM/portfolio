@@ -1,20 +1,32 @@
+import { useEffect, useState } from 'react';
+import { FlatList, Text, View, ScrollView } from 'react-native';
 import { Exp } from '../../constants';
+// import { experienceStyle } from './styles';
 
 export function Experience() {
+  const [exp, setExp] = useState([]);
+
+  useEffect(() => {
+    setExp(Exp);
+  }, [Exp]);
+
   return (
-    <section className="resume-section">
-      <div className="resume-section-content">
-        <h2 className="mb-5">Experience</h2>
-        {Exp.map((item) => (
-          <div className="exp" key={item.id}>
-            <h3 className="exp-title">{item.title}</h3>
-            <div className="employee-title">{item.employer}</div>
-            {item.activities.map((act) => (
-              <p key={act.id}>{act.act}</p>
-            ))}
-          </div>
-        ))}
-      </div>
-    </section>
+    <View>
+      <section className="resume-section">
+        <ScrollView className="resume-section-content">
+          <Text>Experience</Text>
+          {exp.map((item) => (
+            <ScrollView key={item.id}>
+              <Text>{item.title}</Text>
+              <Text>{item.employer}</Text>
+              <FlatList
+                data={item.acts}
+                renderItem={({ item }) => <Text>{item.act}</Text>}
+              />
+            </ScrollView>
+          ))}
+        </ScrollView>
+      </section>
+    </View>
   );
 }

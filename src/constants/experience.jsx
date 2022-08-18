@@ -3,7 +3,7 @@ export const Exp = [
     id: 1,
     title: 'Backend Developer',
     employer: 'Capitual',
-    activities: [
+    acts: [
       { id: 1, act: '1' },
       { id: 2, act: '2' },
     ],

@@ -1,39 +1,41 @@
+import { useEffect, useState } from 'react';
+import { FlatList, Text, ScrollView } from 'react-native';
 import { Courses, Grad } from '../../constants';
-import { educationStyles } from './styles';
+// import { educationStyles } from './styles';
 
 export function Education() {
+  const [grad, setGrad] = useState([]);
+  const [course, setCourse] = useState([]);
+
+  useEffect(() => {
+    setGrad(Grad);
+    setCourse(Courses);
+  }, []);
+
   return (
     <section className="resume-section">
-      <div className="resume-section-content">
-        <h2 className="mb-5">Education</h2>
-        {Grad.map((item) => (
-          <div className="d-flex flex-column" key={item.id}>
-            <div className="flex-grad">
-              <h3 className="mb-0">{item.instituiton}</h3>
-              <div className="subheading mb-3">{item.title}</div>
-            </div>
-            <div className="flex-shrink-0">
-              <span className="text-primary">06/2016 - 06/2021</span>
-            </div>
-          </div>
+      <ScrollView className="resume-section-content">
+        <Text>Education</Text>
+        {grad.map((item) => (
+          <ScrollView key={item.id}>
+            <ScrollView>
+              <Text>{item.instituiton}</Text>
+              <Text>{item.title}</Text>
+            </ScrollView>
+            <ScrollView>
+              <Text>06/2016 - 06/2021</Text>
+            </ScrollView>
+          </ScrollView>
         ))}
-      </div>
+      </ScrollView>
 
-      <div className="resume-section-content">
-        <h2 className="mb-5">Courses</h2>
-        <ul className="fa-ul mb-0">
-          {Courses.map((item) => (
-            <li key={item.id}>
-              <span className="fa-li">
-                <i className="fas fa-trophy text-warning"></i>
-              </span>
-              <div className="subheading mb-3">{item.title}</div>
-              <div className="subheading mb-3">{item.instituiton}</div>
-              <div className="subheading mb-3">{item.year}</div>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ScrollView>
+        <Text>Courses</Text>
+        <FlatList
+          data={course}
+          renderItem={({ item }) => <Text>{item.title}</Text>}
+        />
+      </ScrollView>
     </section>
   );
 }

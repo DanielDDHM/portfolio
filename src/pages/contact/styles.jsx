@@ -1,4 +1,6 @@
-export const contactStyle = {
+import { StyleSheet } from 'react-native';
+
+export const contactStyle = StyleSheet.create({
   contact_form: {
     display: 'flex',
     flexDirection: 'column',
@@ -7,4 +9,4 @@ export const contactStyle = {
     padding: '20px',
     gap: '10px',
   },
-};
+});
