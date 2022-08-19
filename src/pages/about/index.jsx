@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, Linking, Image } from 'react-native';
 import { AboutIcons } from '../../constants';
 import { styleHandler } from './handler';
-import profile from '../../assets/images/profile.jpg'
+import profile from '../../assets/images/profile.jpg';
+import { AboutText } from '../../components';
 
 export function About() {
   const [style, setStyle] = useState({});
@@ -12,26 +13,27 @@ export function About() {
 
   useEffect(() => {
     setStyle(sty);
-  });
+  },[sty]);
 
   return (
-    <View style={{alignItems: 'center'}}>
-      <View style={style.title}>
-        <Text>About Me</Text>
-      </View>
+    <View style={style.container}>
       <View style={style.about}>
-        <Image 
-        source={profile}
-        style={style.photo}
-        />    
-    <Text style={style.about}>Lorem Ipsum</Text>
+        <AboutText />
       </View>
-      <View style={style.icons}>
-        {AboutIcons.map((item) => (
-          <TouchableOpacity onPress={() => Linking.openURL(item.link)}>
-            <FontAwesomeIcon icon={item.icon} color='#6b5b95' size={25}/>
-          </TouchableOpacity>
-        ))}
+      <View style={{justifyContent: 'space-between', gap:'10px'}}>
+        <Image source={profile} style={style.photo} />
+        <View style={style.icons}>
+          {AboutIcons.map((item) => (
+            <TouchableOpacity
+              key={item.id}
+              onPress={() => Linking.openURL(item.link)}
+            >
+              <View style={{borderColor: '#6b5b95', borderWidth: '1px', borderRadius: '3px', padding: '5px'}}>
+              <FontAwesomeIcon icon={item.icon} color="#6b5b95" size={30} />
+              </View>
+            </TouchableOpacity>
+          ))}
+        </View>
       </View>
     </View>
   );

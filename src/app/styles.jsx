@@ -7,12 +7,13 @@ const default_dark = {
     width: '100%',
   },
   body: {
-    backgroundColor: 'white',
+    backgroundColor: 'black',
   },
   mb0: {
     padding: '10px',
-    borderWidth: '1px',
-    borderBottomColor: 'black',
+    borderWidth: '3px',
+    borderBottomColor: '#6b5b95',
+    minHeight: '300px',
   },
 };
 

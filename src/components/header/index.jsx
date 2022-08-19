@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import { styleHandler } from './handler';
 import logo from '../../assets/images/logo.png';
 import { useMediaQuery } from 'react-responsive';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faList } from '@fortawesome/free-solid-svg-icons';
 
 export function Header() {
   const [head, setHead] = useState([]);
@@ -20,14 +22,15 @@ export function Header() {
     <View style={style.header}>
       <View>
         <TouchableOpacity>
-          <Image
-            source={logo}
-            style={{ width: '100px', height: '100px' }}
-          />
+          <Image source={logo} style={{ width: '100px', height: '100px' }} />
         </TouchableOpacity>
       </View>
       {useMediaQuery({ maxWidth: 765 }) ? (
-        <Text>A</Text>
+        <TouchableOpacity onPress={() => alert('opened')}>
+          <View style={style.dropdown}>
+            <FontAwesomeIcon icon={faList} color="#6b5b95" size={20} />
+          </View>
+        </TouchableOpacity>
       ) : (
         <View style={style.list_li}>
           {head.map((item) => (

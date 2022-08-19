@@ -22,7 +22,7 @@ export function Skills() {
         </View>
         <View>
           {skill.map((item) => (
-            <FontAwesomeIcon icon={item.icon} />
+            <FontAwesomeIcon key={item.id} icon={item.icon} />
           ))}
         </View>
       </ScrollView>

@@ -5,7 +5,7 @@ const default_header = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    borderColor: '#6b5b95',
+    borderBottomColor: '#6b5b95',
     borderWidth: '2px',
     width: '100%',
     padding: '20px',
@@ -24,13 +24,20 @@ const default_header = {
     textAlign: 'center',
     maxHeight: 55,
 
-    shadowOffset: {width: 2, height: 5},  
-    shadowColor: '#6b5b95',  
-    shadowOpacity: 0.4,  
-    shadowRadius: 4,  
+    shadowOffset: { width: 2, height: 5 },
+    shadowColor: '#6b5b95',
+    shadowOpacity: 0.4,
+    shadowRadius: 4,
   },
   txt_li: {
     color: 'white',
+    fontFamily: 'Comic Sans',
+  },
+  dropdown: {
+    borderColor: '#6b5b95',
+    borderWidth: '1px',
+    borderRadius: '5px',
+    padding: '10px',
   },
 };
 
@@ -41,17 +48,17 @@ export const header_style_mobile = StyleSheet.create({
   list_li: {
     display: 'none',
   },
-  dropdown: {},
+  dropdown: { ...default_header.dropdown },
 });
 
 export const header_style_tablet = StyleSheet.create({
   header: {
-    ...default_header.header
+    ...default_header.header,
   },
   list_li: {
     display: 'none',
   },
-  dropdown: {},
+  dropdown: { ...default_header.dropdown },
 });
 
 export const header_style_laptop = StyleSheet.create({
