@@ -8,11 +8,11 @@ export const media = () => {
 
   const Tablet = useMediaQuery({
     minWidth: 481,
-    maxWidth: 768,
+    maxWidth: 860,
   });
 
   const Laptop = useMediaQuery({
-    minWidth: 724,
+    minWidth: 861,
     maxWidth: 1024,
   });
 

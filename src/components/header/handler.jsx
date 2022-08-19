@@ -1,5 +1,7 @@
+import { StyleSheet } from 'react-native';
 import { media } from '../../config';
 import {
+  default_header,
   header_style_desktop,
   header_style_laptop,
   header_style_large,
@@ -20,7 +22,7 @@ export function styleHandler() {
       ? header_style_desktop
       : med === 'Large'
       ? header_style_large
-      : null;
+      : StyleSheet.create({ ...default_header });
 
   return style;
 }

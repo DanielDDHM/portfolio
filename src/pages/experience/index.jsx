@@ -1,30 +1,30 @@
 import { useEffect, useState } from 'react';
-import { FlatList, Text, View, ScrollView } from 'react-native';
+import { Text, View } from 'react-native';
+import { ExpCard } from '../../components';
 import { Exp } from '../../constants';
+import { styleHandler } from './handler';
 // import { experienceStyle } from './styles';
 
 export function Experience() {
   const [exp, setExp] = useState([]);
+  const [style, setStyle] = useState({});
 
+    const sty = styleHandler()
   useEffect(() => {
+    setStyle(sty)
     setExp(Exp);
-  }, [Exp]);
+  }, [sty,exp]);
 
   return (
-    <View>
-      <ScrollView>
-        <Text>Experience</Text>
+    <View style={style.container}>
+      <View>
+        <Text style={{ color: 'white', fontSize: 30, alignSelf:'center' }}>Experience</Text>
+      </View>
+      <View style={style.cards}>
         {exp.map((item) => (
-          <ScrollView key={item.id}>
-            <Text>{item.title}</Text>
-            <Text>{item.employer}</Text>
-            <FlatList
-              data={item.acts}
-              renderItem={({ item }) => <Text>{item.act}</Text>}
-            />
-          </ScrollView>
+          <ExpCard key={item.id} props={item}></ExpCard>
         ))}
-      </ScrollView>
+      </View>
     </View>
   );
 }

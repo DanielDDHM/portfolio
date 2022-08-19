@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { FlatList, Text, ScrollView, View } from 'react-native';
+import { View } from 'react-native';
 import { Courses, Grad } from '../../constants';
 // import { educationStyles } from './styles';
 
@@ -12,30 +12,5 @@ export function Education() {
     setCourse(Courses);
   }, []);
 
-  return (
-    <View>
-      <ScrollView className="resume-section-content">
-        <Text>Education</Text>
-        {grad.map((item) => (
-          <ScrollView key={item.id}>
-            <ScrollView>
-              <Text>{item.instituiton}</Text>
-              <Text>{item.title}</Text>
-            </ScrollView>
-            <ScrollView>
-              <Text>06/2016 - 06/2021</Text>
-            </ScrollView>
-          </ScrollView>
-        ))}
-      </ScrollView>
-
-      <ScrollView>
-        <Text>Courses</Text>
-        <FlatList
-          data={course}
-          renderItem={({ item }) => <Text>{item.title}</Text>}
-        />
-      </ScrollView>
-    </View>
-  );
+  return <View></View>;
 }

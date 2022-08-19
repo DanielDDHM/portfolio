@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "android": "expo start --android",
+    "android": "export set NODE_OPTIONS=--openssl-legacy-provider && expo start --android",
     "ios": "expo start --ios",
     "web": "export set NODE_OPTIONS=--openssl-legacy-provider && expo start --web",
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && expo start",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "build:web": "export set NODE_OPTIONS=--openssl-legacy-provider && expo export:web"
   },
   "dependencies": {
     "@expo/match-media": "^0.3.0",

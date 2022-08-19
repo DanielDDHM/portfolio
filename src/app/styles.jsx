@@ -11,9 +11,9 @@ const default_dark = {
   },
   mb0: {
     padding: '10px',
-    borderWidth: '3px',
-    borderBottomColor: '#6b5b95',
-    minHeight: '300px',
+    borderWidth: '1px',
+    borderBottomColor: '#CFB53B',
+    minHeight: '400px',
   },
 };
 

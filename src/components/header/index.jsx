@@ -25,10 +25,13 @@ export function Header() {
           <Image source={logo} style={{ width: '100px', height: '100px' }} />
         </TouchableOpacity>
       </View>
-      {useMediaQuery({ maxWidth: 765 }) ? (
-        <TouchableOpacity onPress={() => alert('opened')}>
+      {useMediaQuery({ maxWidth: 860 }) ? (
+        <TouchableOpacity
+          style={{ justifyContent: 'center' }}
+          onPress={() => alert('opened')}
+        >
           <View style={style.dropdown}>
-            <FontAwesomeIcon icon={faList} color="#6b5b95" size={20} />
+            <FontAwesomeIcon icon={faList} color="#CFB53B" size={20} />
           </View>
         </TouchableOpacity>
       ) : (
