@@ -13,7 +13,9 @@ export function ExpCard({ props }) {
       </View>
       <View style={CardStyle.div}>
         {acts.map((item) => (
-          <Text key={item.id} style={CardStyle.text}>{item.act}</Text>
+          <Text key={item.id} style={CardStyle.text}>
+            {item.act}
+          </Text>
         ))}
       </View>
     </View>
@@ -21,24 +23,25 @@ export function ExpCard({ props }) {
 }
 
 export const CardStyle = StyleSheet.create({
-    container:{
-        borderColor: '#CFB53B',
-        borderWidth: '1px',
-        borderRadius: '5px',
-        maxWidth: '250px',
-        padding: '10px',
-        textAlign: 'center',
-        gap: '10px',
-        shadowOffset: { width: 4, height: 2 },
-        shadowColor: '#CFB53B',
-        shadowOpacity: 0.4,
-        shadowRadius: 4,
-    },
+  container: {
+    borderColor: '#CFB53B',
+    borderWidth: '1px',
+    borderRadius: '5px',
+    maxWidth: '250px',
+    padding: '10px',
+    textAlign: 'center',
+    gap: '10px',
+
+    shadowOffset: { width: 4, height: 2 },
+    shadowColor: '#CFB53B',
+    shadowOpacity: 0.4,
+    shadowRadius: 4,
+  },
   text: {
     color: '#CFB53B',
   },
-  div:{
+  div: {
     borderBottomColor: '#CFB53B',
     borderWidth: '1px',
-  }
+  },
 });
