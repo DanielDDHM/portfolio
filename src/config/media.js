@@ -1,4 +1,5 @@
 import { useMediaQuery } from 'react-responsive';
+import "@expo/match-media";
 
 export const media = () => {
   const Mobile = useMediaQuery({
