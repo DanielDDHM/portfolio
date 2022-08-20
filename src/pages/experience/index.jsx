@@ -17,11 +17,11 @@ export function Experience() {
   return (
     <View style={style.container}>
       <View>
-        <Text style={txt.txt}>Experience</Text>
+        <Text style={style.title}>Experience</Text>
       </View>
       <View style={style.cards}>
         {exp.map((item) => (
-          <View key={item.id} style={txt.card}>
+          <View key={item.id} style={style.card}>
             <ExpCard props={item}></ExpCard>
           </View>
         ))}
@@ -29,8 +29,3 @@ export function Experience() {
     </View>
   );
 }
-
-const txt = StyleSheet.create({
-    txt: { color: 'white', fontSize: 30 },
-    card:{ width:'fit-content'}
-})

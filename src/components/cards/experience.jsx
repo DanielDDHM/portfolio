@@ -27,7 +27,8 @@ export const CardStyle = StyleSheet.create({
     borderColor: '#CFB53B',
     borderWidth: '1px',
     borderRadius: '5px',
-    maxWidth: '250px',
+    minWidth: '225px',
+    minHeight: '200px',
     padding: '10px',
     textAlign: 'center',
     gap: '10px',
@@ -38,7 +39,7 @@ export const CardStyle = StyleSheet.create({
     shadowRadius: 4,
   },
   text: {
-    color: '#CFB53B',
+    color: 'white',
   },
   div: {
     borderBottomColor: '#CFB53B',

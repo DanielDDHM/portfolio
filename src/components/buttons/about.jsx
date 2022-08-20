@@ -4,9 +4,7 @@ import { Linking, StyleSheet, TouchableOpacity, View } from 'react-native';
 export function AboutButtons({ link, icon }) {
   return (
     <TouchableOpacity onPress={() => Linking.openURL(link)}>
-      <View
-        style={Button.container}
-      >
+      <View style={Button.container}>
         <FontAwesomeIcon icon={icon} color="#CFB53B" size={30} />
       </View>
     </TouchableOpacity>
@@ -14,10 +12,10 @@ export function AboutButtons({ link, icon }) {
 }
 
 const Button = StyleSheet.create({
-  container:{
+  container: {
     borderColor: '#CFB53B',
     borderWidth: '1px',
     borderRadius: '3px',
     padding: '5px',
-  }
-})
+  },
+});

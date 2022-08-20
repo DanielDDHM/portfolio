@@ -1,7 +1,5 @@
 import { StyleSheet } from 'react-native';
 
-const default_skills = {};
-
 export const skills_style_mobile = StyleSheet.create({});
 
 export const skills_style_tablet = StyleSheet.create({});

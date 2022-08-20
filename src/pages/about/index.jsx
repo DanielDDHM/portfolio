@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet, Text } from 'react-native';
 import { AboutIcons } from '../../constants';
 import { styleHandler } from './handler';
 import profile from '../../assets/images/profile.jpeg';
 import { AboutText, AboutButtons } from '../../components';
 import { useMediaQuery } from 'react-responsive';
+import { faBox } from '@fortawesome/free-solid-svg-icons';
 
 export function About() {
   const [style, setStyle] = useState({});
@@ -22,7 +23,7 @@ export function About() {
           <View style={style.about}>
             <AboutText />
           </View>
-          <View style={wiew.one}>
+          <View style={box.one}>
             <Image source={profile} style={style.photo} />
             <View style={style.icons}>
               {AboutIcons.map((item) => (
@@ -33,7 +34,7 @@ export function About() {
         </View>
       ) : (
         <View>
-          <View style={wiew.two}>
+          <View style={box.two}>
             <Image source={profile} style={style.photo} />
             <View style={style.about}>
               <AboutText />
@@ -50,7 +51,7 @@ export function About() {
   );
 }
 
-const wiew = StyleSheet.create({
-    one: { justifyContent: 'space-between', gap: '10px' },
-    two: { display: 'flex', gap: '15px' }
-})
+const box = StyleSheet.create({
+  one: { justifyContent: 'space-between', gap: '10px' },
+  two: { display: 'flex', gap: '15px' },
+});

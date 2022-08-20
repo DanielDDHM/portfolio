@@ -22,7 +22,7 @@ export function Header() {
     <View style={style.header}>
       <View>
         <TouchableOpacity>
-          <Image source={logo} style={style.photo}/>
+          <Image source={logo} style={style.photo} />
         </TouchableOpacity>
       </View>
       {useMediaQuery({ maxWidth: 860 }) ? (

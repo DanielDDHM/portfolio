@@ -14,5 +14,5 @@ export function AboutText() {
 }
 
 const Txt = StyleSheet.create({
-    container:{ color: 'white', fontSize: 15 }
-})
+  container: { color: 'white', fontSize: 15 },
+});
