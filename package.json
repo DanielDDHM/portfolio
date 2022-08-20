@@ -13,7 +13,7 @@
   "dependencies": {
     "@expo/match-media": "^0.3.0",
     "@expo/ngrok": "^2.5.0",
-    "@expo/webpack-config": "^0.17.0",
+    "@expo/webpack-config": "^0.16.19",
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
     "@fortawesome/free-brands-svg-icons": "^6.1.2",
     "@fortawesome/free-regular-svg-icons": "^6.1.2",
