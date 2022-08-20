@@ -26,7 +26,7 @@ export const header_style_mobile = StyleSheet.create({
     textAlign: 'center',
     maxHeight: 55,
 
-    shadowOffset: { width: 2, height: 5 },
+    shadowOffset: { width: '2', height: '5' },
     shadowColor: '#CFB53B',
     shadowOpacity: 0.4,
     shadowRadius: 4,
@@ -68,7 +68,7 @@ export const header_style_tablet = StyleSheet.create({
     textAlign: 'center',
     maxHeight: 55,
 
-    shadowOffset: { width: 2, height: 5 },
+    shadowOffset: { width: '2', height: '5' },
     shadowColor: '#CFB53B',
     shadowOpacity: 0.4,
     shadowRadius: 4,
@@ -112,7 +112,7 @@ export const header_style_laptop = StyleSheet.create({
     textAlign: 'center',
     maxHeight: 55,
 
-    shadowOffset: { width: 2, height: 5 },
+    shadowOffset: { width: '2', height: '5' },
     shadowColor: '#CFB53B',
     shadowOpacity: 0.4,
     shadowRadius: 4,
@@ -150,7 +150,7 @@ export const header_style_desktop = StyleSheet.create({
     textAlign: 'center',
     maxHeight: 55,
 
-    shadowOffset: { width: 2, height: 5 },
+    shadowOffset: { width: '2', height: '5' },
     shadowColor: '#CFB53B',
     shadowOpacity: 0.4,
     shadowRadius: 4,
@@ -188,7 +188,7 @@ export const header_style_large = StyleSheet.create({
     textAlign: 'center',
     maxHeight: 55,
 
-    shadowOffset: { width: 2, height: 5 },
+    shadowOffset: { width: '2', height: '5' },
     shadowColor: '#CFB53B',
     shadowOpacity: 0.4,
     shadowRadius: 4,

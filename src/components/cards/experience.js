@@ -33,7 +33,7 @@ export const CardStyle = StyleSheet.create({
     textAlign: 'center',
     gap: '10px',
 
-    shadowOffset: { width: 4, height: 2 },
+    shadowOffset: { width: '4', height: '2' },
     shadowColor: '#CFB53B',
     shadowOpacity: 0.4,
     shadowRadius: 4,
