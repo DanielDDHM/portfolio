@@ -5,8 +5,7 @@ import {
   about_style_laptop,
   about_style_large,
   about_style_mobile,
-  about_style_tablet,
-  default_about,
+  about_style_tablet
 } from './styles';
 
 export function styleHandler() {
@@ -22,7 +21,7 @@ export function styleHandler() {
       ? about_style_desktop
       : med === 'Large'
       ? about_style_large
-      : StyleSheet.create({ default_about });
+      : StyleSheet.create({});
 
   return style;
 }

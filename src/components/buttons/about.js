@@ -1,11 +1,12 @@
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { Linking, StyleSheet, TouchableOpacity, View } from 'react-native';
+import { FontAwesome } from '@expo/vector-icons'; 
+
 
 export function AboutButtons({ link, icon }) {
-  return (
+    return (
     <TouchableOpacity onPress={() => Linking.openURL(link)}>
       <View style={Button.container}>
-        <FontAwesomeIcon icon={icon} color="#CFB53B" size={30} />
+        <FontAwesome name={icon} color={'#CFB53B'} size={30}></FontAwesome>
       </View>
     </TouchableOpacity>
   );

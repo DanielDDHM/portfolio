@@ -4,8 +4,7 @@ import { useEffect, useState } from 'react';
 import { styleHandler } from './handler';
 import logo from '../../assets/images/logo.png';
 import { useMediaQuery } from 'react-responsive';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faList } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesome } from '@expo/vector-icons'; 
 
 export function Header() {
   const [head, setHead] = useState([]);
@@ -31,7 +30,7 @@ export function Header() {
           onPress={() => alert('opened')}
         >
           <View style={style.dropdown}>
-            <FontAwesomeIcon icon={faList} color="#CFB53B" size={20} />
+            <FontAwesome name='list-ul' size={30} color="#CFB53B"></FontAwesome>
           </View>
         </TouchableOpacity>
       ) : (
