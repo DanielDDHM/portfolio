@@ -22,7 +22,7 @@ export function Header() {
     <View style={style.header}>
       <View>
         <TouchableOpacity>
-          <Image source={logo} style={{ width: '100px', height: '100px' }} />
+          <Image source={logo} style={style.photo}/>
         </TouchableOpacity>
       </View>
       {useMediaQuery({ maxWidth: 860 }) ? (

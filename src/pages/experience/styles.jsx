@@ -7,53 +7,57 @@ const default_experience = {
     alignItems: 'center',
     padding: '10px',
     borderRadius: '5px',
-    gap: '20px'
+    gap: '20px',
   },
-  title: {},
   cards: {
     width: '100%',
     gap: '20px',
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
-    alignItems: 'center',
+    alignSelf:'center'
   },
 };
 
 export const experience_style_mobile = StyleSheet.create({
   ...default_experience,
-  container: {
-    width: '100%',
-    alignSelf: 'center',
-    alignItems: 'center',
-    padding: '10px',
-    borderRadius: '5px',
+  container:{
+    width:'100%',
+    alignItems: 'center'
   },
-  cards: {
-    gap: '10px',
-  },
+  cards:{
+    width:'100%',
+    gap: '20px',
+    alignItems: 'center'
+  }
 });
 
 export const experience_style_tablet = StyleSheet.create({
   ...default_experience,
-  container: {
-    width: '100%',
-    alignSelf: 'center',
-    alignItems: 'center',
-    padding: '10px',
-    borderRadius: '5px',
+  container:{
+    width:'100%',
+    alignItems: 'center'
   },
-  cards: {
-    flex: '50%',
+  cards:{
+    width:'100%',
     gap: '20px',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    alignItems: 'center',
-  },
+    alignItems: 'center'
+  }
 });
 
 export const experience_style_laptop = StyleSheet.create({
   ...default_experience,
+  container:{
+    width:'60%',
+    alignItems: 'center',
+    alignSelf: 'center'
+  },
+  cards:{
+    width:'100%',
+    gap: '10px',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+  }
 });
 
 export const experience_style_desktop = StyleSheet.create({

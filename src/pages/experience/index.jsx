@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { ExpCard } from '../../components';
 import { Exp } from '../../constants';
 import { styleHandler } from './handler';
@@ -17,15 +17,20 @@ export function Experience() {
   return (
     <View style={style.container}>
       <View>
-        <Text style={{ color: 'white', fontSize: 30 }}>Experience</Text>
+        <Text style={txt.txt}>Experience</Text>
       </View>
       <View style={style.cards}>
         {exp.map((item) => (
-          <View style={{ alignItems: 'center' }}>
-            <ExpCard key={item.id} props={item}></ExpCard>
+          <View key={item.id} style={txt.card}>
+            <ExpCard props={item}></ExpCard>
           </View>
         ))}
       </View>
     </View>
   );
 }
+
+const txt = StyleSheet.create({
+    txt: { color: 'white', fontSize: 30 },
+    card:{ width:'fit-content'}
+})

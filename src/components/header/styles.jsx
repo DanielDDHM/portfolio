@@ -10,6 +10,9 @@ export const default_header = {
     width: '100%',
     padding: '20px',
   },
+  photo:{
+    width: '100px', height: '100px' 
+  },
   list_li: {
     flexDirection: 'row',
     gap: '50px',

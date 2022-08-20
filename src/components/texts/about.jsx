@@ -1,8 +1,8 @@
-import { Text } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
 
 export function AboutText() {
   return (
-    <Text style={{ color: 'white', fontSize: 15 }}>
+    <Text style={Txt.container}>
       I am currently graduated in electrical engineering and i have been working
       as a developer for the last 2 two years, working mostly with javascript
       and golang technologies. I work as a fullstack with Js, Node and Ts techs,
@@ -12,3 +12,7 @@ export function AboutText() {
     </Text>
   );
 }
+
+const Txt = StyleSheet.create({
+    container:{ color: 'white', fontSize: 15 }
+})

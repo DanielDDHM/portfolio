@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { View, Image } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 import { AboutIcons } from '../../constants';
 import { styleHandler } from './handler';
 import profile from '../../assets/images/profile.jpeg';
@@ -22,7 +22,7 @@ export function About() {
           <View style={style.about}>
             <AboutText />
           </View>
-          <View style={{ justifyContent: 'space-between', gap: '10px' }}>
+          <View style={wiew.one}>
             <Image source={profile} style={style.photo} />
             <View style={style.icons}>
               {AboutIcons.map((item) => (
@@ -33,7 +33,7 @@ export function About() {
         </View>
       ) : (
         <View>
-          <View style={{ display: 'flex', gap: '15px' }}>
+          <View style={wiew.two}>
             <Image source={profile} style={style.photo} />
             <View style={style.about}>
               <AboutText />
@@ -49,3 +49,8 @@ export function About() {
     </View>
   );
 }
+
+const wiew = StyleSheet.create({
+    one: { justifyContent: 'space-between', gap: '10px' },
+    two: { display: 'flex', gap: '15px' }
+})

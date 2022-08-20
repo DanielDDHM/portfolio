@@ -46,7 +46,7 @@ export const default_about = {
 export const about_style_mobile = StyleSheet.create({
   container: {
     ...default_about.container,
-    gap: '10px',
+    gap: '10px'
   },
   photo: {
     width: '125px',

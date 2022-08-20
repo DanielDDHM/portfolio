@@ -25,7 +25,7 @@ export function Main() {
           <View style={style.mb0}>
             <Experience />
           </View>
-          <View style={style.mb0}>
+          {/* <View style={style.mb0}>
             <Education />
           </View>
           <View style={style.mb0}>
@@ -33,7 +33,7 @@ export function Main() {
           </View>
           <View style={style.mb0}>
             <Contact />
-          </View>
+          </View> */}
           <Footer />
         </View>
         {/* {blocker()} */}
