@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ScrollView, View } from 'react-native';
 import { Header, Footer } from '../components';
 // import { blocker } from '../config';
-import { About, Experience, Education, Skills, Contact } from '../pages';
+import { About, Experience} from '../pages';
 import { stylehandler } from './handler';
 
 export function Main() {
