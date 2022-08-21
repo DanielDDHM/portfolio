@@ -14,7 +14,7 @@
     "@expo/match-media": "^0.3.0",
     "@expo/ngrok": "^2.5.0",
     "@expo/vector-icons": "^13.0.0",
-    "@expo/webpack-config": "^0.16.19",
+    "@expo/webpack-config": "^0.17.0",
     "@types/react-native-modal-dropdown": "^0.7.2",
     "expo": "~46.0.7",
     "expo-font": "^10.2.0",
