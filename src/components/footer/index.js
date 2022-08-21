@@ -14,7 +14,5 @@ const footer = StyleSheet.create({
   text: {
     color: default_colors.texts,
     fontSize: 15,
-    height: '100px',
-    height: 'fit-content',
   },
 });

@@ -5,7 +5,7 @@ import {
   about_style_laptop,
   about_style_large,
   about_style_mobile,
-  about_style_tablet
+  about_style_tablet,
 } from './styles';
 
 export function styleHandler() {

@@ -3,7 +3,7 @@ import { Dimensions, Image, Text, TouchableOpacity, View } from 'react-native';
 import { useEffect, useState } from 'react';
 import { styleHandler } from './handler';
 import logo from '../../assets/images/logo.png';
-import { FontAwesome } from '@expo/vector-icons'; 
+import { FontAwesome } from '@expo/vector-icons';
 
 export function Header() {
   const [head, setHead] = useState([]);
@@ -15,7 +15,7 @@ export function Header() {
   useEffect(() => {
     setStyle(sty);
     setHead(Navi);
-    setWidth(Dimensions.get('screen').width)
+    setWidth(Dimensions.get('screen').width);
   }, [sty]);
 
   return (
@@ -25,13 +25,17 @@ export function Header() {
           <Image source={logo} style={style.photo} />
         </TouchableOpacity>
       </View>
-      {(width<= 860) ? (
+      {width <= 860 ? (
         <TouchableOpacity
           style={{ justifyContent: 'center' }}
           onPress={() => alert('opened')}
         >
           <View style={style.dropdown}>
-            <FontAwesome name='list-ul' size={30} color={default_colors.secondary}></FontAwesome>
+            <FontAwesome
+              name="list-ul"
+              size={30}
+              color={default_colors.secondary}
+            ></FontAwesome>
           </View>
         </TouchableOpacity>
       ) : (

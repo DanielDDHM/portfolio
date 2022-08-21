@@ -6,10 +6,10 @@ export const Navi = [
 ];
 
 export const default_colors = {
-    primary: 'black',
-    secondary: '#CFB53B',
-    texts: 'white'
-}
+  primary: 'black',
+  secondary: '#CFB53B',
+  texts: 'white',
+};
 
 export const AboutIcons = [
   {

@@ -21,7 +21,7 @@ export function styleHandler() {
       ? header_style_desktop
       : med === 'Large'
       ? header_style_large
-      : StyleSheet.create({ });
+      : StyleSheet.create({});
 
   return style;
 }

@@ -6,21 +6,16 @@ export const experience_style_mobile = StyleSheet.create({
     width: '100%',
     alignSelf: 'center',
     alignItems: 'center',
-    padding: '10px',
-    borderRadius: '5px',
-    gap: '20px',
+    padding: 10,
+    borderRadius: 5,
+    padding: 20,
   },
   cards: {
     width: '100%',
-    gap: '20px',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
     alignSelf: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   title: { color: default_colors.texts, fontSize: 30 },
-  card: { width: 'fit-content' },
 });
 
 export const experience_style_tablet = StyleSheet.create({
@@ -28,18 +23,17 @@ export const experience_style_tablet = StyleSheet.create({
     width: '100%',
     alignSelf: 'center',
     alignItems: 'center',
-    padding: '10px',
-    borderRadius: '5px',
-    gap: '20px',
+    padding: 10,
+    borderRadius: 5,
+    padding: 20,
   },
   cards: {
     width: '100%',
-    gap: '20px',
+    flexWrap: 'wrap',
     alignSelf: 'center',
     alignItems: 'center',
   },
   title: { color: default_colors.texts, fontSize: 30 },
-  card: { width: 'fit-content' },
 });
 
 export const experience_style_laptop = StyleSheet.create({
@@ -47,13 +41,12 @@ export const experience_style_laptop = StyleSheet.create({
     width: '60%',
     alignSelf: 'center',
     alignItems: 'center',
-    padding: '10px',
-    borderRadius: '5px',
-    gap: '20px',
+    padding: 10,
+    borderRadius: 5,
+    padding: 20,
   },
   cards: {
     width: '100%',
-    gap: '10px',
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
@@ -61,7 +54,6 @@ export const experience_style_laptop = StyleSheet.create({
     alignItems: 'center',
   },
   title: { color: default_colors.texts, fontSize: 30 },
-  card: { width: 'fit-content' },
 });
 
 export const experience_style_desktop = StyleSheet.create({
@@ -69,20 +61,17 @@ export const experience_style_desktop = StyleSheet.create({
     width: '50%',
     alignSelf: 'center',
     alignItems: 'center',
-    padding: '10px',
-    borderRadius: '5px',
-    gap: '20px',
+    padding: 10,
+    borderRadius: 5,
   },
   cards: {
     width: '100%',
-    gap: '20px',
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
     alignSelf: 'center',
   },
   title: { color: default_colors.texts, fontSize: 30 },
-  card: { width: 'fit-content' },
 });
 
 export const experience_style_large = StyleSheet.create({
@@ -90,18 +79,16 @@ export const experience_style_large = StyleSheet.create({
     width: '50%',
     alignSelf: 'center',
     alignItems: 'center',
-    padding: '10px',
-    borderRadius: '5px',
-    gap: '20px',
+    padding: 10,
+    borderRadius: 5,
+    padding: 20,
   },
   cards: {
     width: '100%',
-    gap: '20px',
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
     alignSelf: 'center',
   },
   title: { color: default_colors.texts, fontSize: 30 },
-  card: { width: 'fit-content' },
 });

@@ -13,12 +13,12 @@ export function About() {
 
   useEffect(() => {
     setStyle(sty);
-    setWidth(Dimensions.get('screen').width)
+    setWidth(Dimensions.get('screen').width);
   }, [sty]);
 
   return (
     <View>
-      {(width >= 860) ? (
+      {width >= 860 ? (
         <View style={style.container}>
           <View style={style.about}>
             <AboutText />
@@ -52,6 +52,6 @@ export function About() {
 }
 
 const box = StyleSheet.create({
-  one: { justifyContent: 'space-between', gap: '10px' },
-  two: { display: 'flex', gap: '15px' },
+  one: { justifyContent: 'space-between', padding: 10 },
+  two: { display: 'flex', padding:15 },
 });

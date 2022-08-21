@@ -9,16 +9,12 @@ export function Education() {
   const [style, setStyle] = useState([]);
 
   const sty = styleHandler();
-  
+
   useEffect(() => {
     setGrad(Grad);
     setCourse(Courses);
-    setStyle(sty)
+    setStyle(sty);
   }, [Grad, Courses, sty]);
 
-  return (
-    <View style={style.container}>
-
-    </View>
-  );
+  return <View style={style.container}></View>;
 }
