@@ -1,4 +1,5 @@
 import { StyleSheet, Text } from 'react-native';
+import { default_colors } from '../../constants';
 
 export function AboutText() {
   return (
@@ -14,5 +15,5 @@ export function AboutText() {
 }
 
 const Txt = StyleSheet.create({
-  container: { color: 'white', fontSize: 15 },
+  container: { color: default_colors.texts, fontSize: 15 },
 });

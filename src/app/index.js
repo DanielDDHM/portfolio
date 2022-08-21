@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ScrollView, View } from 'react-native';
 import { Header, Footer } from '../components';
 // import { blocker } from '../config';
-import { About, Experience} from '../pages';
+import { About, Experience, Education} from '../pages';
 import { stylehandler } from './handler';
 
 export function Main() {
@@ -25,9 +25,10 @@ export function Main() {
           <View style={style.mb0}>
             <Experience />
           </View>
-          {/* <View style={style.mb0}>
+          <View style={style.mb0}>
             <Education />
-          </View>
+        </View>
+          {/* 
           <View style={style.mb0}>
             <Skills />
           </View>

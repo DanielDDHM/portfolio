@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
+import { default_colors } from '../../constants';
 
 export function Footer() {
   return (
@@ -11,7 +12,7 @@ export function Footer() {
 const footer = StyleSheet.create({
   container: { alignItems: 'center' },
   text: {
-    color: 'white',
+    color: default_colors.texts,
     fontSize: 15,
     height: '100px',
     height: 'fit-content',

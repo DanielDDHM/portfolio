@@ -1,4 +1,4 @@
-import { Navi } from '../../constants';
+import { default_colors, Navi } from '../../constants';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { useEffect, useState } from 'react';
 import { styleHandler } from './handler';
@@ -31,7 +31,7 @@ export function Header() {
           onPress={() => alert('opened')}
         >
           <View style={style.dropdown}>
-            <FontAwesome name='list-ul' size={30} color="#CFB53B"></FontAwesome>
+            <FontAwesome name='list-ul' size={30} color={default_colors.secondary}></FontAwesome>
           </View>
         </TouchableOpacity>
       ) : (

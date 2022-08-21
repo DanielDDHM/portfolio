@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { default_colors } from '../../constants';
 
 export const experience_style_mobile = StyleSheet.create({
   container: {
@@ -18,7 +19,7 @@ export const experience_style_mobile = StyleSheet.create({
     alignSelf: 'center',
     alignItems: 'center',
   },
-  title: { color: 'white', fontSize: 30 },
+  title: { color: default_colors.texts, fontSize: 30 },
   card: { width: 'fit-content' },
 });
 
@@ -37,7 +38,7 @@ export const experience_style_tablet = StyleSheet.create({
     alignSelf: 'center',
     alignItems: 'center',
   },
-  title: { color: 'white', fontSize: 30 },
+  title: { color: default_colors.texts, fontSize: 30 },
   card: { width: 'fit-content' },
 });
 
@@ -59,7 +60,7 @@ export const experience_style_laptop = StyleSheet.create({
     alignSelf: 'center',
     alignItems: 'center',
   },
-  title: { color: 'white', fontSize: 30 },
+  title: { color: default_colors.texts, fontSize: 30 },
   card: { width: 'fit-content' },
 });
 
@@ -80,7 +81,7 @@ export const experience_style_desktop = StyleSheet.create({
     justifyContent: 'space-between',
     alignSelf: 'center',
   },
-  title: { color: 'white', fontSize: 30 },
+  title: { color: default_colors.texts, fontSize: 30 },
   card: { width: 'fit-content' },
 });
 
@@ -101,6 +102,6 @@ export const experience_style_large = StyleSheet.create({
     justifyContent: 'space-between',
     alignSelf: 'center',
   },
-  title: { color: 'white', fontSize: 30 },
+  title: { color: default_colors.texts, fontSize: 30 },
   card: { width: 'fit-content' },
 });

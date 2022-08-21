@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
+import {default_colors}  from '../../constants' 
 
 export function ExpCard({ props }) {
   const { title, employer, date, acts } = props;
@@ -24,7 +25,7 @@ export function ExpCard({ props }) {
 
 export const CardStyle = StyleSheet.create({
   container: {
-    borderColor: '#CFB53B',
+    borderColor: default_colors.secondary,
     borderWidth: '1px',
     borderRadius: '5px',
     minWidth: '225px',
@@ -33,16 +34,16 @@ export const CardStyle = StyleSheet.create({
     textAlign: 'center',
     gap: '10px',
 
-    shadowOffset: { width: '4', height: '2' },
-    shadowColor: '#CFB53B',
+    shadowOffset: { width: 4, height: 2 },
+    shadowColor: default_colors.secondary,
     shadowOpacity: 0.4,
     shadowRadius: 4,
   },
   text: {
-    color: 'white',
+    color: default_colors.texts,
   },
   div: {
-    borderBottomColor: '#CFB53B',
+    borderBottomColor: default_colors.secondary,
     borderWidth: '1px',
   },
 });

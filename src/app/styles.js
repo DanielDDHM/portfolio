@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { default_colors } from '../constants';
 
 const default_dark = {
   container: {
@@ -12,7 +13,7 @@ const default_dark = {
   mb0: {
     padding: '10px',
     borderWidth: '1px',
-    borderBottomColor: '#CFB53B',
+    borderBottomColor: default_colors.secondary,
     minHeight: '400px',
   },
 };

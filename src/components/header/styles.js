@@ -1,11 +1,12 @@
 import { StyleSheet } from 'react-native';
+import {default_colors}  from '../../constants' 
 
 export const header_style_mobile = StyleSheet.create({
   header: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    borderBottomColor: '#CFB53B',
+    borderBottomColor: default_colors.secondary,
     borderWidth: '1px',
     width: '100%',
     padding: '20px',
@@ -20,22 +21,22 @@ export const header_style_mobile = StyleSheet.create({
   btn_li: {
     fontSize: 40,
     borderWidth: '1px',
-    borderColor: '#CFB53B',
+    borderColor: default_colors.secondary,
     padding: '20px',
     borderRadius: '3px',
     textAlign: 'center',
     maxHeight: 55,
 
-    shadowOffset: { width: '2', height: '5' },
-    shadowColor: '#CFB53B',
+    shadowOffset: { width: 2, height: 5 },
+    shadowColor: default_colors.secondary,
     shadowOpacity: 0.4,
     shadowRadius: 4,
   },
   txt_li: {
-    color: 'white',
+    color: default_colors.texts,
   },
   dropdown: {
-    borderColor: '#CFB53B',
+    borderColor: default_colors.secondary,
     borderWidth: '1px',
     borderRadius: '5px',
     padding: '10px',
@@ -47,7 +48,7 @@ export const header_style_tablet = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    borderBottomColor: '#CFB53B',
+    borderBottomColor: default_colors.secondary,
     borderWidth: '1px',
     width: '100%',
     padding: '20px',
@@ -62,22 +63,22 @@ export const header_style_tablet = StyleSheet.create({
   btn_li: {
     fontSize: 40,
     borderWidth: '1px',
-    borderColor: '#CFB53B',
+    borderColor: default_colors.secondary,
     padding: '20px',
     borderRadius: '3px',
     textAlign: 'center',
     maxHeight: 55,
 
-    shadowOffset: { width: '2', height: '5' },
-    shadowColor: '#CFB53B',
+    shadowOffset: { width: 2, height: 5 },
+    shadowColor: default_colors.secondary,
     shadowOpacity: 0.4,
     shadowRadius: 4,
   },
   txt_li: {
-    color: 'white',
+    color: default_colors.texts,
   },
   dropdown: {
-    borderColor: '#CFB53B',
+    borderColor: default_colors.secondary,
     borderWidth: '1px',
     borderRadius: '5px',
     padding: '10px',
@@ -89,7 +90,7 @@ export const header_style_laptop = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    borderBottomColor: '#CFB53B',
+    borderBottomColor: default_colors.secondary,
     borderWidth: '1px',
     width: '100%',
     padding: '20px',
@@ -106,19 +107,19 @@ export const header_style_laptop = StyleSheet.create({
   btn_li: {
     fontSize: 40,
     borderWidth: '1px',
-    borderColor: '#CFB53B',
+    borderColor: default_colors.secondary,
     padding: '20px',
     borderRadius: '3px',
     textAlign: 'center',
     maxHeight: 55,
 
-    shadowOffset: { width: '2', height: '5' },
-    shadowColor: '#CFB53B',
+    shadowOffset: { width: 2, height: 5 },
+    shadowColor: default_colors.secondary,
     shadowOpacity: 0.4,
     shadowRadius: 4,
   },
   txt_li: {
-    color: 'white',
+    color: default_colors.texts,
   },
 });
 
@@ -127,7 +128,7 @@ export const header_style_desktop = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    borderBottomColor: '#CFB53B',
+    borderBottomColor: default_colors.secondary,
     borderWidth: '1px',
     width: '100%',
     padding: '20px',
@@ -144,19 +145,19 @@ export const header_style_desktop = StyleSheet.create({
   btn_li: {
     fontSize: 40,
     borderWidth: '1px',
-    borderColor: '#CFB53B',
+    borderColor: default_colors.secondary,
     padding: '20px',
     borderRadius: '3px',
     textAlign: 'center',
     maxHeight: 55,
 
-    shadowOffset: { width: '2', height: '5' },
-    shadowColor: '#CFB53B',
+    shadowOffset: { width: 2, height: 5 },
+    shadowColor: default_colors.secondary,
     shadowOpacity: 0.4,
     shadowRadius: 4,
   },
   txt_li: {
-    color: 'white',
+    color: default_colors.texts,
   },
 });
 
@@ -165,7 +166,7 @@ export const header_style_large = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    borderBottomColor: '#CFB53B',
+    borderBottomColor: default_colors.secondary,
     borderWidth: '1px',
     width: '100%',
     padding: '20px',
@@ -182,18 +183,18 @@ export const header_style_large = StyleSheet.create({
   btn_li: {
     fontSize: 40,
     borderWidth: '1px',
-    borderColor: '#CFB53B',
+    borderColor: default_colors.secondary,
     padding: '20px',
     borderRadius: '3px',
     textAlign: 'center',
     maxHeight: 55,
 
-    shadowOffset: { width: '2', height: '5' },
-    shadowColor: '#CFB53B',
+    shadowOffset: { width: 2, height: 5 },
+    shadowColor: default_colors.secondary,
     shadowOpacity: 0.4,
     shadowRadius: 4,
   },
   txt_li: {
-    color: 'white',
+    color: default_colors.texts,
   },
 });

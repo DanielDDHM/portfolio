@@ -5,6 +5,12 @@ export const Navi = [
   { id: 4, class: 'Contact' },
 ];
 
+export const default_colors = {
+    primary: 'black',
+    secondary: '#CFB53B',
+    texts: 'white'
+}
+
 export const AboutIcons = [
   {
     id: 1,
