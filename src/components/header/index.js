@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { styleHandler } from './handler';
 import logo from '../../assets/images/logo.png';
 import { FontAwesome } from '@expo/vector-icons'; 
-import "@expo/match-media";
 
 export function Header() {
   const [head, setHead] = useState([]);

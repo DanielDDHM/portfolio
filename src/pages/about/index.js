@@ -4,8 +4,6 @@ import { AboutIcons } from '../../constants';
 import { styleHandler } from './handler';
 import profile from '../../assets/images/profile.jpeg';
 import { AboutText, AboutButtons } from '../../components';
-import { useMediaQuery } from 'react-responsive';
-import "@expo/match-media";
 
 export function About() {
   const [style, setStyle] = useState({});

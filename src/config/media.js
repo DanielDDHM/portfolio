@@ -1,4 +1,3 @@
-import "@expo/match-media";
 import { Dimensions } from 'react-native';
 
 export function media(){
