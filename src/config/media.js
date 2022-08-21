@@ -1,40 +1,27 @@
-import { useMediaQuery } from 'react-responsive';
 import "@expo/match-media";
+import { Dimensions } from 'react-native';
 
-export const media = () => {
-  const Mobile = useMediaQuery({
-    minWidth: 320,
-    maxWidth: 480,
-  });
+export function media(){
 
-  const Tablet = useMediaQuery({
-    minWidth: 481,
-    maxWidth: 860,
-  });
+    const width = Dimensions.get('screen').width
 
-  const Laptop = useMediaQuery({
-    minWidth: 861,
-    maxWidth: 1024,
-  });
+    const minWidths = {
+        mobile: 320,
+        tablet: 481,
+        laptop: 861,
+        desktop: 1025,
+        large: 1201
+    }
 
-  const Desktop = useMediaQuery({
-    minWidth: 1025,
-    maxWidth: 1200,
-  });
-
-  const Large_devices = useMediaQuery({
-    minWidth: 1201,
-  });
-
-  const device = Mobile
+  const device = width >= minWidths.mobile && width < minWidths.tablet
     ? 'Mobile'
-    : Tablet
+    : width >= minWidths.tablet && width < minWidths.laptop
     ? 'Tablet'
-    : Laptop
+    : width >= minWidths.laptop && width < minWidths.desktop
     ? 'Laptop'
-    : Desktop
+    : width >= minWidths.desktop && width < minWidths.large
     ? 'Desktop'
-    : Large_devices
+    : width >= minWidths.large
     ? 'Large'
     : 'Large';
 

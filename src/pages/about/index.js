@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { View, Image, StyleSheet, Text } from 'react-native';
+import { View, Image, StyleSheet, Text, Dimensions } from 'react-native';
 import { AboutIcons } from '../../constants';
 import { styleHandler } from './handler';
 import profile from '../../assets/images/profile.jpeg';
@@ -9,16 +9,18 @@ import "@expo/match-media";
 
 export function About() {
   const [style, setStyle] = useState({});
+  const [width, setWidth] = useState(0);
 
   const sty = styleHandler();
 
   useEffect(() => {
     setStyle(sty);
+    setWidth(Dimensions.get('screen').width)
   }, [sty]);
 
   return (
     <View>
-      {useMediaQuery({ minWidth: 860 }) ? (
+      {(width >= 860) ? (
         <View style={style.container}>
           <View style={style.about}>
             <AboutText />

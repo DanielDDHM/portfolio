@@ -1,21 +1,22 @@
 import { default_colors, Navi } from '../../constants';
-import { Image, Text, TouchableOpacity, View } from 'react-native';
+import { Dimensions, Image, Text, TouchableOpacity, View } from 'react-native';
 import { useEffect, useState } from 'react';
 import { styleHandler } from './handler';
 import logo from '../../assets/images/logo.png';
-import { useMediaQuery } from 'react-responsive';
 import { FontAwesome } from '@expo/vector-icons'; 
 import "@expo/match-media";
 
 export function Header() {
   const [head, setHead] = useState([]);
   const [style, setStyle] = useState({});
+  const [width, setWidth] = useState(0);
 
   const sty = styleHandler();
 
   useEffect(() => {
     setStyle(sty);
     setHead(Navi);
+    setWidth(Dimensions.get('screen').width)
   }, [sty]);
 
   return (
@@ -25,7 +26,7 @@ export function Header() {
           <Image source={logo} style={style.photo} />
         </TouchableOpacity>
       </View>
-      {useMediaQuery({ maxWidth: 860 }) ? (
+      {(width<= 860) ? (
         <TouchableOpacity
           style={{ justifyContent: 'center' }}
           onPress={() => alert('opened')}
