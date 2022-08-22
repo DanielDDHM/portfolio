@@ -41,8 +41,8 @@ export const Courses = [
   {
     id: 6,
     title: 'ReactJS and NextJS from Basic to Advanced',
-    instituiton: '',
-    year: '',
+    instituiton: 'Udemy',
+    year: '2021',
   },
   {
     id: 7,

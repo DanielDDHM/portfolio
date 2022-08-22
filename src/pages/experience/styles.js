@@ -13,7 +13,7 @@ export const experience_style_mobile = StyleSheet.create({
   cards: {
     width: '100%',
     alignSelf: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   title: { color: default_colors.texts, fontSize: 30 },
 });

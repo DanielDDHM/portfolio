@@ -53,5 +53,5 @@ export function About() {
 
 const box = StyleSheet.create({
   one: { justifyContent: 'space-between', padding: 10 },
-  two: { display: 'flex', padding:15 },
+  two: { display: 'flex', padding: 15 },
 });

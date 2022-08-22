@@ -44,6 +44,8 @@ export const about_style_mobile = StyleSheet.create({
     shadowOpacity: 0.7,
     shadowRadius: 4,
     alignSelf: 'center',
+
+    marginTop: 20,
   },
 });
 
@@ -78,6 +80,7 @@ export const about_style_tablet = StyleSheet.create({
     shadowOpacity: 0.7,
     shadowRadius: 4,
     alignSelf: 'center',
+    marginTop: 20,
   },
   photo: {
     width: 200,
@@ -90,6 +93,8 @@ export const about_style_tablet = StyleSheet.create({
     flexDirection: 'row',
     padding: 20,
     alignSelf: 'center',
+
+    marginTop: 10,
   },
 });
 
@@ -133,6 +138,8 @@ export const about_style_laptop = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+
+    marginTop: 10,
   },
 });
 
@@ -176,6 +183,8 @@ export const about_style_desktop = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+
+    marginTop: 10,
   },
 });
 
@@ -219,5 +228,7 @@ export const about_style_large = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+
+    marginTop: 10,
   },
 });

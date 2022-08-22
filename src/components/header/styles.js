@@ -101,7 +101,7 @@ export const header_style_laptop = StyleSheet.create({
   },
   list_li: {
     flexDirection: 'row',
-    padding:50,
+    padding: 50,
     padding: 25,
   },
   btn_li: {
@@ -112,6 +112,8 @@ export const header_style_laptop = StyleSheet.create({
     borderRadius: 3,
     textAlign: 'center',
     maxHeight: 55,
+
+    marginLeft: 20,
 
     shadowOffset: { width: 2, height: 5 },
     shadowColor: default_colors.secondary,
@@ -139,7 +141,7 @@ export const header_style_desktop = StyleSheet.create({
   },
   list_li: {
     flexDirection: 'row',
-    padding:50,
+    padding: 50,
     padding: 25,
   },
   btn_li: {
@@ -150,6 +152,8 @@ export const header_style_desktop = StyleSheet.create({
     borderRadius: 3,
     textAlign: 'center',
     maxHeight: 55,
+
+    marginLeft: 20,
 
     shadowOffset: { width: 2, height: 5 },
     shadowColor: default_colors.secondary,
@@ -177,7 +181,7 @@ export const header_style_large = StyleSheet.create({
   },
   list_li: {
     flexDirection: 'row',
-    padding:50,
+    padding: 50,
     padding: 25,
   },
   btn_li: {
@@ -188,6 +192,8 @@ export const header_style_large = StyleSheet.create({
     borderRadius: 3,
     textAlign: 'center',
     maxHeight: 55,
+
+    marginLeft: 20,
 
     shadowOffset: { width: 2, height: 5 },
     shadowColor: default_colors.secondary,
