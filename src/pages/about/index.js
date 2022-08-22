@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { View, Image, StyleSheet, Text, Dimensions } from 'react-native';
 import { AboutIcons } from '../../constants';
 import { styleHandler } from './handler';
@@ -10,6 +10,7 @@ export function About() {
   const [width, setWidth] = useState(0);
 
   const sty = styleHandler();
+  const aboutRef = useRef('About');
 
   useEffect(() => {
     setStyle(sty);
@@ -17,7 +18,7 @@ export function About() {
   }, [sty]);
 
   return (
-    <View>
+    <View ref={aboutRef}>
       {width >= 860 ? (
         <View style={style.container}>
           <View style={style.about}>

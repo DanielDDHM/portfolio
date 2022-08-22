@@ -1,11 +1,11 @@
 import { default_colors, Navi } from '../../constants';
 import { Dimensions, Image, Text, TouchableOpacity, View } from 'react-native';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { styleHandler } from './handler';
 import logo from '../../assets/images/logo.png';
 import { FontAwesome } from '@expo/vector-icons';
 
-export function Header() {
+export function Header({ props }) {
   const [head, setHead] = useState([]);
   const [style, setStyle] = useState({});
   const [width, setWidth] = useState(0);
@@ -17,6 +17,20 @@ export function Header() {
     setHead(Navi);
     setWidth(Dimensions.get('screen').width);
   }, [sty]);
+
+  function scroolHandler(ref) {
+    const { aboutRef, expRef, eduRef, skillsRef } = props;
+
+    ref === 'Home'
+      ? aboutRef.current?.scrollIntoView()
+      : ref === 'Experience'
+      ? expRef.current?.scrollIntoView()
+      : ref === 'Education'
+      ? eduRef.current?.scrollIntoView()
+      : ref === 'Skills'
+      ? skillsRef.current?.scrollIntoView()
+      : null;
+  }
 
   return (
     <View style={style.header}>
@@ -43,7 +57,7 @@ export function Header() {
           {head.map((item) => (
             <TouchableOpacity
               style={style.btn_li}
-              onPress={() => alert(`${item.class}`)}
+              onPress={() => scroolHandler(item.class)}
               key={item.id}
             >
               <Text style={style.txt_li}>{item.class}</Text>

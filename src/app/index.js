@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ScrollView, View } from 'react-native';
 import { Header, Footer } from '../components';
 // import { blocker } from '../config';
@@ -7,6 +7,13 @@ import { stylehandler } from './handler';
 
 export function Main() {
   const [style, setStyle] = useState({});
+
+  const aboutRef = useRef(null);
+  const expRef = useRef(null);
+  const eduRef = useRef(null);
+  const skillsRef = useRef(null);
+
+  console.log(aboutRef, expRef, eduRef, skillsRef);
 
   const sty = stylehandler();
 
@@ -17,18 +24,18 @@ export function Main() {
   return (
     <ScrollView>
       <View style={style.container}>
-        <Header />
+        <Header props={{ aboutRef, expRef, eduRef, skillsRef }} />
         <View style={style.body}>
-          <View style={style.mb0}>
+          <View style={style.mb0} ref={aboutRef}>
             <About />
           </View>
-          <View style={style.mb0}>
+          <View style={style.mb0} ref={expRef}>
             <Experience />
           </View>
-          <View style={style.mb0}>
+          <View style={style.mb0} ref={eduRef}>
             <Education />
           </View>
-          <View style={style.mb0}>
+          <View style={style.mb0} ref={skillsRef}>
             <Skills />
           </View>
           <Footer />

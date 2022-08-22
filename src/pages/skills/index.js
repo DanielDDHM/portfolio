@@ -3,7 +3,7 @@ import {
   Fontisto,
   MaterialCommunityIcons,
 } from '@expo/vector-icons';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { default_colors, Skill } from '../../constants';
 import { styleHandler } from './handler';
@@ -13,6 +13,7 @@ export function Skills() {
   const [style, setStyle] = useState({});
 
   const sty = styleHandler();
+  const skillRef = useRef();
 
   useEffect(() => {
     setSkill(Skill);
@@ -20,7 +21,7 @@ export function Skills() {
   }, [Skill, sty]);
 
   return (
-    <View style={style.container}>
+    <View style={style.container} ref={skillRef}>
       <View style={style.div}>
         <Text style={style.title}>Skills</Text>
       </View>
