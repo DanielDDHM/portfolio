@@ -27,31 +27,28 @@ export function Skills() {
       <View style={style.div}>
         {skill.map((item) =>
           item.font === 'fontawesome' ? (
-            <View style={icon.div}>
-                            <FontAwesome5
-              key={item.id}
-              name={item.icon}
-              color={default_colors.secondary}
-              size={30}
-            />
-                </View>
+            <View style={icon.div} key={item.id}>
+              <FontAwesome5
+                name={item.icon}
+                color={default_colors.secondary}
+                size={30}
+              />
+            </View>
           ) : item.font === 'materialcomunity' ? (
-            <View style={icon.div}>
-            <MaterialCommunityIcons
-              key={item.id}
-              name={item.icon}
-              color={default_colors.secondary}
-              size={30}
-            />
+            <View style={icon.div} key={item.id}>
+              <MaterialCommunityIcons
+                name={item.icon}
+                color={default_colors.secondary}
+                size={30}
+              />
             </View>
           ) : item.font === 'fontisto' ? (
-            <View style={icon.div}>
-            <Fontisto
-              key={item.id}
-              name={item.icon}
-              color={default_colors.secondary}
-              size={30}
-            />
+            <View style={icon.div} key={item.id}>
+              <Fontisto
+                name={item.icon}
+                color={default_colors.secondary}
+                size={30}
+              />
             </View>
           ) : null,
         )}
@@ -61,5 +58,5 @@ export function Skills() {
 }
 
 const icon = StyleSheet.create({
-    div:{padding: 10}
-})
+  div: { padding: 10 },
+});

@@ -21,7 +21,7 @@ export function Education() {
       <View style={style.div}>
         <Text style={style.title}>Graduation</Text>
         {grad.map((item) => (
-          <View style={style.items}>
+          <View style={style.items} key={item.id}>
             <Text style={style.text}>{`\u2022 ${item.title} `}</Text>
             <Text
               style={style.text}
@@ -32,7 +32,7 @@ export function Education() {
       <View style={style.div}>
         <Text style={style.title}>Courses</Text>
         {course.map((item) => (
-          <View style={style.items}>
+          <View style={style.items} key={item.id}>
             <Text style={style.text}>{`\u2022 ${item.title} `}</Text>
             <Text
               style={style.text}
