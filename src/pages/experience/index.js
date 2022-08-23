@@ -8,7 +8,6 @@ export function Experience() {
   const [exp, setExp] = useState([]);
   const [style, setStyle] = useState({});
 
-  const expRef = useRef();
   const sty = styleHandler();
 
   useEffect(() => {
@@ -17,7 +16,7 @@ export function Experience() {
   }, [sty, exp]);
 
   return (
-    <View style={style.container} ref={expRef}>
+    <View style={style.container}>
       <View>
         <Text style={style.title}>Experience</Text>
       </View>

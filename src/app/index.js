@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { ScrollView, View } from 'react-native';
 import { Header, Footer } from '../components';
-// import { blocker } from '../config';
 import { About, Experience, Education, Skills } from '../pages';
 import { stylehandler } from './handler';
 

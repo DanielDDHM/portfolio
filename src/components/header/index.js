@@ -1,6 +1,6 @@
 import { default_colors, Navi } from '../../constants';
 import { Dimensions, Image, Text, TouchableOpacity, View } from 'react-native';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { styleHandler } from './handler';
 import logo from '../../assets/images/logo.png';
 import { FontAwesome } from '@expo/vector-icons';
@@ -13,12 +13,11 @@ export function Header({ props }) {
   const [refs, setRefs] = useState(null);
 
   const sty = styleHandler();
-
   useEffect(() => {
     setStyle(sty);
     setHead(Navi);
     setWidth(Dimensions.get('screen').width);
-    setRefs(props)
+    setRefs(props);
   }, [sty, props, width]);
 
   function scrollHandler(ref) {
@@ -32,7 +31,7 @@ export function Header({ props }) {
       ? eduRef?.current?.scrollIntoView()
       : ref === 'Skills'
       ? skillsRef?.current?.scrollIntoView()
-      : null
+      : null;
   }
 
   return (
@@ -56,9 +55,14 @@ export function Header({ props }) {
               ></FontAwesome>
             </View>
           ) : (
-            <View>
+            <View style={style.dropdown}>
               {head.map((item) => (
                 <TouchableOpacity
+                  style={{
+                    borderBottomColor: default_colors.secondary,
+                    borderWidth: 1,
+                    marginBottom: 5,
+                  }}
                   onPress={() => {
                     setDropdown(!dropdown);
                     scrollHandler(item.class);

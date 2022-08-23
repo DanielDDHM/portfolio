@@ -10,7 +10,6 @@ export function About() {
   const [width, setWidth] = useState(0);
 
   const sty = styleHandler();
-  const aboutRef = useRef('About');
 
   useEffect(() => {
     setStyle(sty);
@@ -18,7 +17,7 @@ export function About() {
   }, [sty]);
 
   return (
-    <View ref={aboutRef}>
+    <View>
       {width >= 860 ? (
         <View style={style.container}>
           <View style={style.about}>

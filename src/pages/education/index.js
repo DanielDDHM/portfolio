@@ -9,7 +9,6 @@ export function Education() {
   const [style, setStyle] = useState([]);
 
   const sty = styleHandler();
-  const educationRef = useRef();
 
   useEffect(() => {
     setGrad(Grad);
@@ -18,7 +17,7 @@ export function Education() {
   }, [Grad, Courses, sty]);
 
   return (
-    <View style={style.container} ref={educationRef}>
+    <View style={style.container}>
       <View style={style.div}>
         <Text style={style.title}>Graduation</Text>
         {grad.map((item) => (

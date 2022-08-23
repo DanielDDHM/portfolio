@@ -13,7 +13,6 @@ export function Skills() {
   const [style, setStyle] = useState({});
 
   const sty = styleHandler();
-  const skillRef = useRef();
 
   useEffect(() => {
     setSkill(Skill);
@@ -21,7 +20,7 @@ export function Skills() {
   }, [Skill, sty]);
 
   return (
-    <View style={style.container} ref={skillRef}>
+    <View style={style.container}>
       <View style={style.div}>
         <Text style={style.title}>Skills</Text>
       </View>
