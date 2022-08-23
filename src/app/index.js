@@ -13,8 +13,6 @@ export function Main() {
   const eduRef = useRef(null);
   const skillsRef = useRef(null);
 
-  console.log(aboutRef, expRef, eduRef, skillsRef);
-
   const sty = stylehandler();
 
   useEffect(() => {

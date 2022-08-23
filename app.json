@@ -22,12 +22,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/icons/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.ddhm.portfolio",
+      "version": "1.0.0"
     },
     "web": {
       "favicon": "./src/assets/icons/favicon.png"
     },
     "plugins": ["sentry-expo"],
-    "homepage": "/webapp"
+    "homepage": "/webapp",
+    "extra": {
+      "eas": {
+        "projectId": "dea6b0d8-791f-4bac-831f-25c3970dcdb5"
+      }
+    }
   }
 }

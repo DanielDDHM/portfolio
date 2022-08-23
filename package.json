@@ -8,7 +8,8 @@
     "web": "export set NODE_OPTIONS=--openssl-legacy-provider && expo start --web",
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && expo start",
     "prettier": "prettier --write .",
-    "build:web": "export set NODE_OPTIONS=--openssl-legacy-provider && expo export:web"
+    "build:web": "export set NODE_OPTIONS=--openssl-legacy-provider && expo export:web",
+    "build:android": "export set NODE_OPTIONS=--openssl-legacy-provider && eas build -p android"
   },
   "dependencies": {
     "@expo/match-media": "^0.3.0",
@@ -17,6 +18,7 @@
     "@expo/webpack-config": "^0.17.0",
     "@types/react-native-modal-dropdown": "^0.7.2",
     "dotenv": "^16.0.1",
+    "eas-cli": "^1.1.0",
     "expo": "~46.0.7",
     "expo-font": "^10.2.0",
     "expo-screen-orientation": "^4.3.0",
