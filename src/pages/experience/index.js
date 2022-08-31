@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { useEffect, useRef, useState } from 'react';
+import { Text, View } from 'react-native';
 import { ExpCard } from '../../components';
 import { Exp } from '../../constants';
 import { styleHandler } from './handler';
@@ -9,6 +9,7 @@ export function Experience() {
   const [style, setStyle] = useState({});
 
   const sty = styleHandler();
+
   useEffect(() => {
     setStyle(sty);
     setExp(Exp);

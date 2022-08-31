@@ -3,7 +3,7 @@ import {
   Fontisto,
   MaterialCommunityIcons,
 } from '@expo/vector-icons';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { default_colors, Skill } from '../../constants';
 import { styleHandler } from './handler';

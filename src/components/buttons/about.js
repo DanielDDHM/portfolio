@@ -22,5 +22,6 @@ const Button = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 3,
     padding: 5,
+    marginLeft: 5,
   },
 });

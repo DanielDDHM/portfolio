@@ -93,8 +93,6 @@ export const about_style_tablet = StyleSheet.create({
     flexDirection: 'row',
     padding: 20,
     alignSelf: 'center',
-
-    marginTop: 10,
   },
 });
 

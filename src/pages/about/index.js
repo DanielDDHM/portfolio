@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { View, Image, StyleSheet, Text, Dimensions } from 'react-native';
 import { AboutIcons } from '../../constants';
 import { styleHandler } from './handler';
