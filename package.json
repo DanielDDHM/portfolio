@@ -8,7 +8,7 @@
     "web": "export set NODE_OPTIONS=--openssl-legacy-provider && expo start --web",
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && expo start",
     "prettier": "prettier --write .",
-    "build:web": "export set NODE_OPTIONS=--openssl-legacy-provider && expo export:web",
+    "build:web": "export set NODE_OPTIONS=--openssl-legacy-provider && EXPO_DEBUG_WEB=true expo export:web",
     "build:android": "export set NODE_OPTIONS=--openssl-legacy-provider && eas build -p android"
   },
   "dependencies": {
@@ -28,7 +28,7 @@
     "prettier": "^2.7.1",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "react-native": "0.69.4",
+    "react-native": "0.69.5",
     "react-native-modal-dropdown": "^1.0.2",
     "react-native-responsive": "^1.0.2",
     "react-native-svg": "12.3.0",
@@ -43,6 +43,6 @@
     "@babel/core": "^7.12.9",
     "@types/react-native": "^0.69.5"
   },
-  "homepage": "/webapp",
+  "homepage": "/",
   "private": true
 }
