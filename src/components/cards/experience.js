@@ -28,7 +28,7 @@ export const CardStyle = StyleSheet.create({
     borderColor: default_colors.secondary,
     borderWidth: 1,
     borderRadius: 5,
-    minWidth: 225,
+    minWidth: 250,
     minHeight: 200,
     padding: 10,
     textAlign: 'center',

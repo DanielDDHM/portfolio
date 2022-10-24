@@ -14,9 +14,12 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ddhm.portfolio"
     },
     "android": {
       "adaptiveIcon": {
@@ -29,7 +32,9 @@
     "web": {
       "favicon": "./src/assets/icons/favicon.png"
     },
-    "plugins": ["sentry-expo"],
+    "plugins": [
+      "sentry-expo"
+    ],
     "homepage": "/webapp",
     "extra": {
       "eas": {

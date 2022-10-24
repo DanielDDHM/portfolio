@@ -71,4 +71,10 @@ export const Skill = [
     icon: 'aws',
     font: 'fontawesome',
   },
+  {
+    id: 15,
+    name: 'Angular',
+    icon: 'angular',
+    font: 'fontawesome',
+  },
 ];

@@ -82,6 +82,14 @@ export const experience_style_large = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
     padding: 20,
+
+    borderColor: default_colors.secondary,
+    borderWidth: 1,
+    borderRadius: 5,
+    shadowOffset: { width: 4, height: 3 },
+    shadowColor: default_colors.secondary,
+    shadowOpacity: 0.7,
+    shadowRadius: 4,
   },
   cards: {
     width: '100%',

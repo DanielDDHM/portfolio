@@ -8,6 +8,11 @@ export const education_style_mobile = StyleSheet.create({
     width: '100%',
     alignSelf: 'center',
     alignItems: 'center',
+
+    shadowOffset: { width: 4, height: 3 },
+    shadowColor: default_colors.secondary,
+    shadowOpacity: 0.7,
+    shadowRadius: 4,
   },
   text: { color: default_colors.texts, fontSize: 15, textAlign: 'center' },
   title: {
@@ -28,6 +33,11 @@ export const education_style_tablet = StyleSheet.create({
     width: '100%',
     alignSelf: 'center',
     alignItems: 'center',
+
+    shadowOffset: { width: 4, height: 3 },
+    shadowColor: default_colors.secondary,
+    shadowOpacity: 0.7,
+    shadowRadius: 4,
   },
   text: { color: default_colors.texts, fontSize: 15, textAlign: 'center' },
   title: {
@@ -48,6 +58,11 @@ export const education_style_laptop = StyleSheet.create({
     width: '50%',
     alignSelf: 'center',
     alignItems: 'center',
+
+    shadowOffset: { width: 4, height: 3 },
+    shadowColor: default_colors.secondary,
+    shadowOpacity: 0.7,
+    shadowRadius: 4,
   },
   text: { color: default_colors.texts, fontSize: 15, textAlign: 'center' },
   title: {
@@ -68,6 +83,11 @@ export const education_style_desktop = StyleSheet.create({
     width: '50%',
     alignSelf: 'center',
     alignItems: 'center',
+
+    shadowOffset: { width: 4, height: 3 },
+    shadowColor: default_colors.secondary,
+    shadowOpacity: 0.7,
+    shadowRadius: 4,
   },
   text: { color: default_colors.texts, fontSize: 15, textAlign: 'center' },
   title: {
@@ -88,6 +108,11 @@ export const education_style_large = StyleSheet.create({
     width: '50%',
     alignSelf: 'center',
     alignItems: 'center',
+
+    shadowOffset: { width: 4, height: 3 },
+    shadowColor: default_colors.secondary,
+    shadowOpacity: 0.7,
+    shadowRadius: 4,
   },
   text: { color: default_colors.texts, fontSize: 15, textAlign: 'center' },
   title: {
