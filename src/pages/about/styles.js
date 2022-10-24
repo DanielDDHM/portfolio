@@ -5,7 +5,7 @@ export const about_style_mobile = StyleSheet.create({
   container: {
     display: 'flex',
     flexDirection: 'row',
-    width: '75%',
+    width: '50%',
     borderWidth: 1,
     borderColor: default_colors.secondary,
     padding: 10,
@@ -34,7 +34,7 @@ export const about_style_mobile = StyleSheet.create({
     alignSelf: 'center',
   },
   about: {
-    width: '75%',
+    width: '50%',
     borderColor: default_colors.secondary,
     borderWidth: 1,
     borderRadius: 5,
@@ -53,7 +53,7 @@ export const about_style_tablet = StyleSheet.create({
   container: {
     display: 'flex',
     flexDirection: 'row',
-    width: '75%',
+    width: '50%',
     borderWidth: 1,
     borderColor: default_colors.secondary,
     padding: 10,
@@ -100,7 +100,7 @@ export const about_style_laptop = StyleSheet.create({
   container: {
     display: 'flex',
     flexDirection: 'row',
-    width: '75%',
+    width: '50%',
     borderWidth: 1,
     borderColor: default_colors.secondary,
     padding: 10,
@@ -145,7 +145,7 @@ export const about_style_desktop = StyleSheet.create({
   container: {
     display: 'flex',
     flexDirection: 'row',
-    width: '75%',
+    width: '50%',
     borderWidth: 1,
     borderColor: default_colors.secondary,
     padding: 10,
@@ -190,7 +190,7 @@ export const about_style_large = StyleSheet.create({
   container: {
     display: 'flex',
     flexDirection: 'row',
-    width: '75%',
+    width: '50%',
     borderWidth: 1,
     borderColor: default_colors.secondary,
     padding: 10,
